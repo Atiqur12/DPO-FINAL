@@ -1,0 +1,26 @@
+.quiz-btn {
+  width: 100%;
+  margin: 5px;
+  background-color: #0d6efdba !important;
+  border-color: #0d6efdba !important;
+}
+
+.quiz-validation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+textarea {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  font-size: 12;
+}
+
+
+.form-control { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: blue;
+            opacity: 1; /* Firefox */
+}
