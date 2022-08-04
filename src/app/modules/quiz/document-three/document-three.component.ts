@@ -37,14 +37,14 @@ export class DocumentThreeComponent  {
      Numéro de téléphone : ${ans[10]}
      ARTICLE 2. PRÉSENTATION DE LA PLATEFORME NUMÉRIQUE
      ${ans[1]} a pour objet :
-     ${ans[11]}
+     ${ans[12]}
 
      ARTICLE 3. CONTACT
      Pour toute question ou demande d'information concernant la plateforme numérique,
      ou tout signalement de contenu ou d'activités illicites,
      l'utilisateur peut contacter l'éditeur à l'adresse e-mail suivante:
      ${ans[1]} ou adresser un courrier recommandé avec accusé de réception à :
-     ${ans[2]}
+     ${ans[4]}
 
 
      ARTICLE 4. ACCEPTATION DES CONDITIONS D'UTILISATION
@@ -57,8 +57,7 @@ export class DocumentThreeComponent  {
      En cas de désaccord avec les CGU, aucun usage du site ne saurait être effectué par l'utilisateur.
 
      ARTICLE 5. ACCÈS ET NAVIGATION
-     L'accès au site et son utilisation sont réservés aux personnes âgées au minimum de ${ans[12]}ans.
-     L'éditeur sera en droit de demander une justification de l'âge de l'utilisateur, et ce par tout moyen.
+     ${ans[14]==="yes"?"L'accès au site et son utilisation sont réservés aux personnes âgées au minimum de L'éditeur \n sera en droit de demander une justification de l'âge de l'utilisateur, et ce par tout moyen.":""}
      L'éditeur met en œuvre les solutions techniques à sa disposition pour permettre l'accès au site 24 heures sur 24,
      7 jours sur 7. Il pourra néanmoins à tout moment suspendre,
      limiter ou interrompre l'accès au site ou à certaines pages de celui-ci afin de procéder à des mises à jours,
@@ -84,7 +83,7 @@ doc.addPage();
 let textThree:string=`
 
 
-     ARTICLE 7. SERVICES RÉSERVÉS AUX UTILISATEURS INSCRITS
+${ans[16]===""?"ARTICLE 7. SERVICES RÉSERVÉS AUX UTILISATEURS INSCRITS":""}
 
 
      1. INSCRIPTION
@@ -111,18 +110,19 @@ let textThree:string=`
 
 
 
-     L'identifiant et le mot de passe sont modifiables en ligne par l'utilisateur dans son Espace personnel.
-     Le mot de passe est personnel et confidentiel,
-     l'utilisateur s'engage ainsi à ne pas le communiquer à des tiers.
-     MonSiteInternet se réserve en tout état de cause la possibilité de refuser une demande d'inscription aux services en
+     ${ans[17]===""?"L'identifiant et le mot de passe sont modifiables en ligne par l'utilisateur dans son Espace personnel. \n Le mot de passe est personnel et confidentiel,l'utilisateur s'engage ainsi à ne pas le communiquer à des tiers.":""}
+
+     ${ans[1]} se réserve en tout état de cause la possibilité de refuser une demande d'inscription aux services en
      cas de non-respect par l'utilisateur des dispositions des présentes Conditions Générales d'Utilisati
 
 
      2. DÉSINSCRIPTION
+
      L'utilisateur régulièrement inscrit pourra à tout moment demander sa désinscription en se rendant sur la page
      dédiée dans son Espace personnel.
-     Toute désinscription du site sera effective après que l'utilisateur ait rempli le formulaire prévu à cet effet,
-     dans le délai suivant : 1 mois.
+      ${ans[18]===""?"Toute désinscription du site sera effective après que l'utilisateur ait rempli le formulaire prévu à cet effet,dans le délai suivant : 1 mois.":""}\n\n
+
+      ${ans[19]===""?"3. SUPPRESSION DE L'ESPACE PERSONNEL À L'INITIATIVE DE L'ÉDITEUR  \n \n Il est porté à la connaissance de l'utilisateur que l'éditeur se réserve le droit de supprimer l'espace personnel de tout Utilisateur qui contreviendrait \n aux présentes conditions d'utilisation et de vente,  \n et plus particulièrement dans les cas suivants :  Si l'utilisateur fait une utilisation illicite de la plateforme ;   \n Si l'utilisateur, lors de la création de son espace personnel, transmet volontairement des informations erronées sur la plateforme ; \n Si l'utilisateur n'a pas été actif sur son espace personnel depuis au moins un an.  \n Dans le cas où l'éditeur déciderait de supprimer l'espace personnel de l'utilisateur pour l'une de ces raisons,  \n celle-ci ne saurait constituer un dommage pour l'utilisateur dont le compte a été supprimé. \n Cette suppression ne saurait constituer une renonciation aux poursuites judiciaires que l'éditeur pourrait entreprendre à  \nl'égard de l'utilisateur étant contrevenu à ces règles. ":""}
      3. SUPPRESSION DE L'ESPACE PERSONNEL À L'INITIATIVE DE L'ÉDITEUR
      Il est porté à la connaissance de l'utilisateur que l'éditeur se réserve le droit de supprimer
      l'espace personnel de tout Utilisateur qui contreviendrait aux présentes conditions d'utilisation et de vente,
@@ -167,7 +167,7 @@ let textTwo:string=`
 
      ARTICLE 9. LIENS HYPERTEXTES
      Le site peut contenir des liens hypertextes pointant vers d'autres sites internet sur
-     lesquels MonSiteInternet n'exerce pas de contrôle. Malgré les vérifications préalables et régulières réalisés
+     lesquels ${ans[1]} n'exerce pas de contrôle. Malgré les vérifications préalables et régulières réalisés
      par l'éditeur, celui-ci décline tout responsabilité quant aux contenus qu'il est possible de trouver sur ces sites.
      L'éditeur autorise la mise en place de liens hypertextes vers toute page ou document de son site sous réserve que
      la mise en place de ces liens ne soit pas réalisée à des fins commerciales ou publicitaires.
@@ -216,13 +216,18 @@ let textTwo:string=`
 
 doc.addPage();
 let textFour:string=`
-     II. CONDITIONS GÉNÉRALES DE VENTE
+     ${ans[20]===""?"II. CONDITIONS GÉNÉRALES DE VENTE":""}
      PREAMBULE
      Le site est édité par le vendeur, MSI S.A.S, dont le siège social est situé à
      l'adresse suivante : 13 rue Gambetta, 75012 Paris, et immatriculée au RCS 123456789.
-     Numéro individuel d'identification intracommunautaire du vendeur : 123456789
-     L'activité du vendeur est soumise au régime réglementé suivant : ARS
-     Les dispositions suivantes ont pour objet de définir les conditions générales de vente sur MonSiteInternet
+     ${ans[21]===""?"Numéro individuel d'identification intracommunautaire du vendeur : ":""}
+     ${ans[22]}
+
+
+     ${ans[23]===""?"L'activité du vendeur est soumise au régime réglementé suivant :":""}
+     ${ans[24]}
+     Les dispositions suivantes ont pour objet de définir les conditions générales de vente sur ${ans[1]}
+
      Les présentes conditions générales de vente (ci-après "CGV") définissent les droits
      et obligations contractuels du vendeur et de son client dans le cadre d'une vente à
      distance et par voie électronique de biens et produits.
@@ -271,7 +276,9 @@ let textFour:string=`
      ARTICLE 4. CONFIRMATION ET PAIEMENT DE LA COMMANDE
      Il s'agit d'une commande avec obligation de paiement, ce qui signifie que la passation de
      la commande implique un règlement du client.
+
      1. PAIEMENT
+
      Le client effectue le paiement au moment de la validation finale de la commande en spécifiant son numéro de carte bancaire.
      Le client garantit au vendeur qu'il dispose des autorisations nécessaires pour utiliser ce mode de
      paiement et reconnaît que les informations données à cet effet valent preuve de son consentement
@@ -280,7 +287,8 @@ let textFour:string=`
      de la carte bancaire (utilisation du numéro de la carte bancaire), toute personne peut contester
      dans les 70 jours à partir de la date de l'opération en transmettant une réclamation selon les modalités suivantes,
      afin que le vendeur prenne à sa charge les coûts de la vente et restitue la somme contestée :
-     contactez le service client à l'adresse contact@site.com
+
+     ${ans[25]}
      Toute contestation non effectuée dans les règles définies ci-dessus et dans les délais impartis
      ne pourra être prise en compte et dégagera le vendeur de toute responsabilité.
      Le vendeur a mis en place une procédure de vérification des commandes et des moyens de paiement
@@ -303,7 +311,8 @@ let textFour:string=`
      Le client peut toujours faire valoir son droit de rétractation dans les 14 jours à
      compter du moment où l'information concernant l'indisponibilité du produit lui a été adressée.
      Pour toute question relative au suivi d'une commande, le client pourra contacter le service client aux coordonnées suivantes :
-     Lundi au vendredi 9H à 17H30
+      ${ans[26]}
+
      ARTICLE 5. SIGNATURE ÉLECTRONIQUE
      Conformément aux dispositions de la Loi n° 2000-230 du 13 mars 2000,
      la fourniture en ligne du numéro de carte bancaire de l'acheteur et la validation
@@ -319,8 +328,10 @@ let textFour:string=`
      Les produits sont livrés à l'adresse indiquée par le client sur le formulaire en ligne valant bon de commande, le client devant veiller à son exactitude.
      Tout colis renvoyé au vendeur à cause d'une adresse de livraison erronée ou incomplète sera réexpédié aux frais du client.
      Sauf en cas de force majeure, la livraison intervient, selon le mode choisi par le client, dans les délais suivants :
-     3 à 7 jours
+     ${ans[27]}
+
      1. RETARD DE LIVRAISON ET DÉNONCIATION
+
      En cas de retard de livraison, le vendeur en informera le client, lequel peut dénoncer le contrat et demander à être remboursé dans les 14 jours à compter de cette dénonciation.
      Le remboursement total du produit et des frais de livraison, ou de réexpédition le cas échéant, est alors effectué.
      Cette dénonciation du contrat doit être adressée selon les modalités suivantes : Lundi au vendredi 9H à 17H30
@@ -331,6 +342,7 @@ let textFour:string=`
      La vérification des produits est considérée comme effectuée dès lors que le client, ou une personne autorisée par lui, a signé le bon de livraison.
      Le client devra, le cas échéant, informer le vendeur de ses réserves selon les modalités suivantes :
      Lundi au vendredi 9H à 17H30
+
      Toute réserve non effectuée dans les règles définies ci-dessus et dans les délais impartis ne pourra être prise en compte et dégagera le vendeur de toute responsabilité vis-à-vis du client.
      A la réception de la réclamation, le vendeur attribuera un numéro d'échange du ou des produit(s) concerné(s) et le communiquera par courrier électronique au client.
      3. ERREUR DE LIVRAISON
@@ -340,34 +352,36 @@ let textFour:string=`
      Toute réclamation non effectuée dans les règles définies ci-dessus et dans les délais impartis ne pourra être prise en compte et dégagera le vendeur de toute responsabilité vis-à-vis du client.
      4. RETOUR DE COMMANDE
      Le produit à échanger ou à rembourser devra être retourné au vendeur dans son ensemble et dans son emballage d'origine, selon les modalités suivantes :
-     retours sous 30 jours
-     Toute réclamation ou retour non effectué dans les règles définies ci-dessus et dans les délais impartis ne pourra être pris en compte et dégagera le vendeur de toute responsabilité vis-à-vis du client.
-     Tout produit à échanger ou à rembourser devra être retourné au vendeur dans son ensemble et dans son emballage d'origine. Les frais de retour sont à la charge du client.
+      ${ans[28]}     Toute réclamation ou retour non effectué dans les règles définies ci-dessus et dans les délais impartis ne pourra être pris en compte et dégagera le vendeur de toute responsabilité vis-à-vis du client.
+     Tout produit à échanger ou à rembourser devra être retourné au vendeur dans son ensemble et dans son emballage d'origine. Les frais de retour sont à la charge du   ${ans[29]}.
 
      ARTICLE 9. GARANTIES DES PRODUITS
     Le vendeur est garant de la conformité des produits au contrat.
     Le client peut formuler une demande au titre de la garantie légale de conformité, conformément aux dispositions des articles L. 211-4 du Code de la consommation, ou au titre de la garantie des vices des articles 1641 et suivants du Code civil.
-    Il est indiqué au client que le vendeur n'est pas le producteur de la totalité des produits présentés au sens de la Loi n° 98-389 du 19 mai 1998 relative à la responsabilité du fait des produits défectueux.
+${ans[30]===""?" Il est indiqué au client que le vendeur n'est pas le producteur de la totalité des produits présentés au sens de la Loi n° 98-389 du 19 mai 1998 relative à la responsabilité du fait des produits défectueux.":""   }
+
     1. GARANTIE DE CONFORMITÉ
+
+
     Le client dispose d'un délai de 2 ans à compter de la délivrance du produit pour mettre en oeuvre la garantie légale de conformité.
     A ce titre, il peut choisir entre la réparation ou le remplacement du bien, dans les conditions prévues à l'article L. 211-9 du Code de la consommation.
     Le client n'est pas tenu de rapporter la preuve de l'existence d'un défaut de conformité, dans les 6 mois (24 mois à compter du 18 mars 2016, sauf pour les biens d'occasion) suivant la date de délivrance du produit.
+
     2. GARANTIE DES VICES
     Le client, s'il met en œuvre la garantie des vices prévue aux articles 1641 et suivants du Code civil, pourra choisir entre la résolution de la vente ou une réduction du prix, et ce conformément à l'article 1644 du Code civil.
-    3. GARANTIE COMMERCIALE
-    Le vendeur offre au client une garantie commerciale couvrant la conformité des produits et assurant en cas de non-conformité le remboursement du prix d'achat, le remplacement ou la réparation du produit, pendant la durée suivante : 3 mois.
-    Cette garantie ne couvre pas les défauts occasionnés du fait d'une utilisation anormale ou fautive ou résultant d'une cause étrangère aux qualités intrinsèques des
-    produits.
-    Cette garantie n'est pas exclusive de l'application des garanties prévues aux 9.1 et 9.2.
+
+   ${ans[31]===""?" 3. GARANTIE COMMERCIALELe vendeur offre au client une garantie commerciale couvrant la conformité des produits et assurant en cas de non-conformité le remboursement du prix d'achat,  \n  le remplacement ou la réparation du produit, pendant la durée suivante : 3 mois.  \n Cette garantie ne couvre pas les défauts occasionnés du fait d'une utilisation anormale ou fautive ou résultant d'une cause étrangère aux qualités intrinsèques desproduits. \n Cette garantie n'est pas exclusive de l'application des garanties prévues aux 9.1 et 9.2.":""}
     ARTICLE 10. INDISPONIBILITÉ DES PRODUITS ET REMBOURSEMENT
     En cas d'indisponibilité d'un produit commandé, le client en sera informé par courrier électronique.
     Le client aura la possibilité d'annuler sa commande et aura ainsi le choix entre le remboursement des sommes par lui versées dans les 30 jours au plus tard de leur versement, ou à l'échange du produit.
+
+
     ARTICLE 11. DROIT DE RÉTRACTATION
     Le client peut faire valoir son droit de rétractation et de retour du produit dans un délai de 14 jours ouvrables suivant la livraison.
     Le client fera valoir son droit de rétractation en contactant le service client : Lundi au vendredi 9H à 17H30
     Après avoir communiqué sa décision de se rétracter, le client dispose alors de 14 jours pour renvoyer ou restituer les biens.
     Toute rétractation ou retour non effectué dans les règles définies ci-dessus et dans les délais impartis ne pourra être pris en compte et dégagera le vendeur de toute responsabilité vis-à-vis du client.
-    Le client pourra demander l'échange ou le remboursement du produit retourné, sans pénalité, à l'exception des frais de retour qui restent à sa charge. Néanmoins, en cas d'échange, des frais de livraison peuvent être à nouveau facturés au client.
+    Le client pourra demander l'échange ou le remboursement du produit retourné, sans pénalité, à l'exception des frais de retour qui restent à sa charge.\n${ans[33]===""?" Néanmoins, en cas d'échange, des frais de livraison peuvent être à nouveau facturés au client.":""}
     Le retour ou l'échange du produit ne pourra être accepté que pour les produits dans leur ensemble, intacts et dans leur état d'origine, en particulier avec un emballage complet, intact et en état de vente.
     Certains produits, en raison de leur qualité intrinsèque, ne pourront pas être soumis au droit de rétractation et ne pourront pas être remboursés, notamment mais pas exclusivement, les produits visés par l'article L. 121-21-8 du Code de la consommation à savoir :
     tout produit sur-mesure ;
@@ -376,6 +390,7 @@ let textFour:string=`
     tout produit vidéo ;
     tout produit de presse...
     Le vendeur devra rembourser le client de la totalité des sommes versées, y compris les frais de livraison, dans les 14 jours de la récupération des biens ou de la transmission d'une preuve de l'expédition de ces biens.
+
     ARTICLE 12. FORCE MAJEURE
     Les parties seront exonérées de leurs obligations, dans le cas où une circonstance constitutive d'un cas de force majeure tel que défini par l'article 1218 du code civil, empêcherait leur exécution. Les obligations des parties seront suspendues.
     La partie qui invoque une telle circonstance, devra en avertir l'autre partie immédiatement, à sa survenance et à sa disparition.
