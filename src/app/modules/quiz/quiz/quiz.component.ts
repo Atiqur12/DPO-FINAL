@@ -231,9 +231,7 @@ L'utilisateur a le droit de demander la portabilité de ses données personnelle
 détenues par le site, vers un autre site, en se conformant à la procédure ci-après :
 L’utilisateur doit faire une demande de portabilité de ses données personnelles auprès du responsable de traitement des
  données, en envoyant un e-mail à l’adresse prévue ci-dessus.
-c. Droit à la limitation et à l'opposition du traitement des données
-L'utilisateur a le droit de demander la limitation ou de s'opposer au traitement de ses données par le site, sans que
-le site ne puisse refuser, sauf à démontrer l'existence de motifs légitimes et impérieux,
+
 
 `
 doc.setFontSize(10);
@@ -243,6 +241,9 @@ doc.text(textThree, 20, 20);
 doc.addPage();
 let textFour : string=
 `
+c. Droit à la limitation et à l'opposition du traitement des données
+L'utilisateur a le droit de demander la limitation ou de s'opposer au traitement de ses données par le site, sans que
+le site ne puisse refuser, sauf à démontrer l'existence de motifs légitimes et impérieux,
  pouvant prévaloir sur les intérêts et les droits et libertés de l'utilisateur.
 Afin de demander la limitation du traitement de ses données ou de formuler une opposition au traitement de ses données,
 l'utilisateur doit suivre la procédure suivante :
@@ -351,7 +352,9 @@ Il est porté à la connaissance de l'utilisateur que la dernière mise à jour 
 
 
               ARTICLE 8 : ACCEPTATION PAR L'UTILISATEUR DE LA POLITIQUE DE CONFIDENTIALITÉ
-En naviguant sur le site, l'utilisateur atteste avoir lu et compris la présente politique de confidentialité et en accepte les conditions, en ce qui concerne plus particulièrement la collecte et le traitement de ses données à caractère personnel, ainsi que l'utilisation de fichiers "cookies".
+En naviguant sur le site, l'utilisateur atteste avoir lu et compris la présente politique de confidentialité et en accepte les conditions,
+en ce qui concerne plus particulièrement la collecte et le traitement de ses données à caractère personnel,
+ ainsi que l'utilisation de fichiers "cookies".
 `
 doc.setFontSize(10);
 

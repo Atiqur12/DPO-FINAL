@@ -48,10 +48,11 @@ export class DocumentThreeComponent  {
 
 
      ARTICLE 4. ACCEPTATION DES CONDITIONS D'UTILISATION
-     L'accès et l'utilisation du site sont soumis à l'acceptation et au respect des présentes Conditions Générales d'Utilisation.
-     L'éditeur se réserve le droit de modifier, à tout moment et sans préavis, le site et des services ainsi que les présentes CGU,
-     notamment pour s'adapter aux évolutions du site par la mise à disposition de nouvelles fonctionnalités ou la suppression
-     ou la modification de fonctionnalités existantes.
+     L'accès et l'utilisation du site sont soumis à l'acceptation et au respect des présentes Conditions Générales
+     d'Utilisation.L'éditeur se réserve le droit de modifier, à tout moment et sans préavis, le site et des services ainsi
+     que les présentes CGU,notamment pour s'adapter aux évolutions du site par la mise à disposition de nouvelles
+     fonctionnalités ou
+     la suppression ou la modification de fonctionnalités existantes.
      Il est donc conseillé à l'utilisateur de se référer avant toute navigation à la dernière version des CGU,
      accessible à tout moment sur le site.
      En cas de désaccord avec les CGU, aucun usage du site ne saurait être effectué par l'utilisateur.
@@ -93,8 +94,8 @@ ${ans[16]===""?"ARTICLE 7. SERVICES RÉSERVÉS AUX UTILISATEURS INSCRITS":""}
      Conditions Générales d'Utilisation.
      Lors de son inscription, l'utilisateur s'engage à fournir des informations exactes, sincères et
      à jour sur sa personne et son état civil.
-     L'utilisateur devra en outre procéder à une vérification régulière des données le concernant afin d'en conserver l'exactitude.
-     L'utilisateur doit ainsi fournir impérativement une adresse e-mail valide,
+     L'utilisateur devra en outre procéder à une vérification régulière des données le concernant afin d'en conserver
+     l'exactitude.L'utilisateur doit ainsi fournir impérativement une adresse e-mail valide,
      sur laquelle le site lui adressera une confirmation de son inscription à ses services.
      Une adresse de messagerie électronique ne peut être utilisée plusieurs fois pour s'inscrire aux services.
      Toute communication réalisée par ${ans[1]} et ses partenaires est en conséquence réputée avoir été réceptionnée
@@ -144,7 +145,7 @@ ${ans[16]===""?"ARTICLE 7. SERVICES RÉSERVÉS AUX UTILISATEURS INSCRITS":""}
 
 
 doc.addPage();
-let textTwo:string=`
+let textFour:string=`
      ARTICLE 8. RESPONSABILITÉS
      L'éditeur n'est responsable que du contenu qu'il a lui-même édité. L'éditeur n'est pas responsable :
      En cas de problématiques ou défaillances techniques, informatiques ou de compatibilité du site avec un
@@ -177,7 +178,6 @@ let textTwo:string=`
      Enfin, MonSiteInternet se réserve le droit de faire supprimer à tout moment un lien hypertexte pointant
      vers son site, si le site l'estime non conforme à sa politique éditoriale.
 
-
      ARTICLE 10 : CONFIDENTIALITÉ
      En plus des présentes Conditions Générales, le site dispose d'une politique de confidentialité qui décrit
      la manière dont les données à caractère personnel sont traitées lorsque l'utilisateur se rend sur le site,
@@ -185,7 +185,6 @@ let textTwo:string=`
      sont utilisés.
      En naviguant sur le site, l'utilisateur déclare avoir également pris connaissance de la politique de
      confidentialité susmentionnée.
-
 
      ARTICLE 11. PROPRIÉTÉ INTELLECTUELLE
      La structuration du site mais aussi les textes, graphiques, images, photographies, sons, vidéos
@@ -202,7 +201,6 @@ let textTwo:string=`
      Il est interdit à l'utilisateur d'introduire des données sur le site qui modifieraient ou qui seraient
      susceptibles d'en modifier le contenu ou l'apparence.
 
-
      ARTICLE 12. LOI APPLICABLE ET JURIDICTION COMPÉTENTE
      Les présentes Conditions Générales d'Utilisation sont régies par la loi française. En cas de différend
      et à défaut d'accord amiable, le litige sera porté devant les tribunaux français
@@ -211,11 +209,11 @@ let textTwo:string=`
 
      doc.setFontSize(10);
 
-     doc.text(textThree, 20, 20);
+     doc.text(textFour, 20, 20);
 
 
 doc.addPage();
-let textFour:string=`
+let textFive:string=`
      ${ans[20]===""?"II. CONDITIONS GÉNÉRALES DE VENTE":""}
      PREAMBULE
      Le site est édité par le vendeur, MSI S.A.S, dont le siège social est situé à
@@ -251,13 +249,16 @@ let textFour:string=`
 
      ARTICLE 2. PRIX
      Le vendeur se réserve le droit de modifier ses prix à tout moment en les publiant en ligne.
-     Seuls s'appliqueront les tarifs en vigueur indiqués au moment de la commande, sous réserve de disponibilité des produits à cette date.
-     Les prix sont indiqués en euros (hors taxes et toutes taxes comprises) et ne tiennent pas compte des frais de livraison, lesquels sont facturés en supplément. Les frais de livraison sont indiqués avant validation de la commande par le client.
-     Les prix tiennent compte des taxes applicables au jour de la commande et tout changement du taux de ces taxes sera automatiquement répercuté sur le prix des produits du catalogue ou de la boutique en ligne. Si une ou plusieurs taxes ou contributions, notamment environnementales, venaient à être créées ou modifiées, en hausse comme en baisse, ce changement pourra être répercuté sur le prix de vente des produits.
-     Le montant total de la commande (toutes taxes comprises) et frais de livraison inclus, est indiqué avant validation finale du bon de commande.
-     Le paiement de la totalité du prix doit être réalisé lors de la commande.
-
-
+     Seuls s'appliqueront les tarifs en vigueur indiqués au moment de la commande, sous réserve de disponibilité des
+     produits à cette date.Les prix sont indiqués en euros (hors taxes et toutes taxes comprises) et ne tiennent pas
+     compte des frais de livraison, lesquels sont facturés en supplément. Les frais de livraison sont indiqués avant
+     validation de la commande par le client. Les prix tiennent compte des taxes applicables au jour de la commande
+     et tout changement du taux de ces taxes sera automatiquement répercuté sur le prix des produits du catalogue ou
+     de la boutique en ligne. Si une ou plusieurs taxes ou contributions, notamment environnementales, venaient à être
+     créées ou modifiées, en hausse comme en baisse, ce changement pourra être répercuté sur le prix de vente
+     des produits. Le montant total de la commande (toutes taxes comprises) et frais de livraison inclus,
+     est indiqué avant validation finale du bon de commande. Le paiement de la totalité du prix doit être réalisé lors
+    de la commande.
 
      ARTICLE 3. COMMANDE EN LIGNE
      Le client a la possibilité de remplir un bon de commande en ligne, au moyen d'un formulaire électronique.
@@ -275,14 +276,20 @@ let textFour:string=`
      jusqu'à résolution du problème.
      ARTICLE 4. CONFIRMATION ET PAIEMENT DE LA COMMANDE
      Il s'agit d'une commande avec obligation de paiement, ce qui signifie que la passation de
-     la commande implique un règlement du client.
+     la commande implique un règlement du client.`
 
-     1. PAIEMENT
 
-     Le client effectue le paiement au moment de la validation finale de la commande en spécifiant son numéro de carte bancaire.
-     Le client garantit au vendeur qu'il dispose des autorisations nécessaires pour utiliser ce mode de
-     paiement et reconnaît que les informations données à cet effet valent preuve de son consentement
-     à la vente comme à l'exigibilité des sommes dues au titre de la commande.
+     doc.setFontSize(10);
+
+     doc.text(textFive, 20, 20);
+     doc.addPage();
+
+     let textSix:string=`1. PAIEMENT
+
+     Le client effectue le paiement au moment de la validation finale de la commande
+     bancaire.Le client garantit au vendeur qu'il dispose des autorisations nécessaires
+     pour utiliser ce mode de paiement et reconnaît que les informations données à cet
+     effet valent preuve de son consentement à la vente comme à l'exigibilité des sommes dues au titre de la commande.
      En cas de contestation ou d'utilisation frauduleuse de la carte bancaire sans utilisation physique
      de la carte bancaire (utilisation du numéro de la carte bancaire), toute personne peut contester
      dans les 70 jours à partir de la date de l'opération en transmettant une réclamation selon les modalités suivantes,
@@ -298,6 +305,7 @@ let textFour:string=`
      ou en cas de non-paiement, le vendeur se réserve le droit de suspendre ou d'annuler la commande et sa livraison.
      Le vendeur se réserve également le droit de refuser une commande émanant d'un acheteur qui n'aurait
      pas réglé totalement ou partiellement une commande précédente ou avec lequel un litige de paiement serait en cours
+
      2. CONFIRMATIO
      Dès réception de la validation de l'achat et du paiement par le client, le vendeur transmet à ce dernier,
      sur l'adresse électronique qu'il a précisée, confirmation de la réception du bon de commande et
@@ -310,49 +318,83 @@ let textFour:string=`
      le reste de la commande demeurant ferme et définitif.
      Le client peut toujours faire valoir son droit de rétractation dans les 14 jours à
      compter du moment où l'information concernant l'indisponibilité du produit lui a été adressée.
-     Pour toute question relative au suivi d'une commande, le client pourra contacter le service client aux coordonnées suivantes :
+     Pour toute question relative au suivi d'une commande, le client pourra contacter le service client aux coordonnées
+     suivantes :
       ${ans[26]}
 
      ARTICLE 5. SIGNATURE ÉLECTRONIQUE
      Conformément aux dispositions de la Loi n° 2000-230 du 13 mars 2000,
      la fourniture en ligne du numéro de carte bancaire de l'acheteur et la validation
-     finale de la commande valent preuve de l'accord du client, de l'exigibilité des sommes dues au titre du bon de commande,
+     finale de la commande valent preuve de l'accord du client, de l'exigibilité des sommes dues au titre du bon de
+     commande,
      signature et acceptation expresse de toutes les opérations effectuées.
+
      ARTICLE 6. PREUVE DE LA TRANSACTION
-     Les communications, commandes et paiements intervenus entre le client et le vendeur pourront être prouvés grâce aux registres informatisés, conservés dans les systèmes informatiques du vendeur dans des conditions raisonnables de sécurité. Les bons de commandes et factures sont archivés sur un support fiable et durable considéré, notamment, comme un moyen de preuve.
+     Les communications, commandes et paiements intervenus entre le client et le vendeur pourront être prouvés grâce
+     aux registres informatisés,conservés dans les systèmes informatiques du vendeur dans des conditions raisonnables
+     de sécurité. Les bons de commandes et factures sont archivés sur un support fiable et durable considéré, notamment,
+     comme un moyen de preuve.
+
      ARTICLE 7. MODE DE PAIEMENT
      L'ensemble des modes de paiement mis à la disposition du client sont listés sur le
-     site du vendeur. Le client garantit au vendeur qu'il dispose des autorisations éventuellement nécessaires pour utiliser le mode de paiement choisi par lui, lors de la passation de commande.
+     site du vendeur. Le client garantit au vendeur qu'il dispose des autorisations éventuellement nécessaires pour utiliser
+     le mode de paiement choisi par lui,lors de la passation de commande.
+
      ARTICLE 8. LIVRAISON
      La livraison n'est faite qu'après confirmation du paiement par l'organisme bancaire du vendeur.
-     Les produits sont livrés à l'adresse indiquée par le client sur le formulaire en ligne valant bon de commande, le client devant veiller à son exactitude.
-     Tout colis renvoyé au vendeur à cause d'une adresse de livraison erronée ou incomplète sera réexpédié aux frais du client.
-     Sauf en cas de force majeure, la livraison intervient, selon le mode choisi par le client, dans les délais suivants :
+     Les produits sont livrés à l'adresse indiquée par le client sur le formulaire en ligne valant bon de commande, le client
+     devant veiller à son exactitude. Tout colis renvoyé au vendeur à cause d'une adresse de livraison erronée ou
+     incomplètesera réexpédié aux frais du client. Sauf en cas de force majeure, la livraison intervient, selon
+     le mode choisi par le client,dans les délais suivants :`
+     doc.setFontSize(10);
+
+     doc.text(textSix, 20, 20);
+     doc.addPage();
+
+     let textSeven:string=`1. PAIEMENT
+
+
+
      ${ans[27]}
 
      1. RETARD DE LIVRAISON ET DÉNONCIATION
 
-     En cas de retard de livraison, le vendeur en informera le client, lequel peut dénoncer le contrat et demander à être remboursé dans les 14 jours à compter de cette dénonciation.
-     Le remboursement total du produit et des frais de livraison, ou de réexpédition le cas échéant, est alors effectué.
-     Cette dénonciation du contrat doit être adressée selon les modalités suivantes : Lundi au vendredi 9H à 17H30
-     Toute dénonciation non effectuée dans les règles définies ci-dessus et dans les délais impartis ne pourra être prise en compte et dégagera le vendeur de toute responsabilité vis-à-vis du client.
-     2. VÉRIFICATION DE LA COMMANDE
-     Si au moment de la livraison, l'emballage d'origine est abîmé, déchiré, ouvert, le client doit alors vérifier l'état des produits. S'ils ont été endommagés, l'acheteur doit impérativement refuser le colis et noter une réserve sur le bon de livraison.
-     Le client doit indiquer sur le bon de livraison, et sous forme manuscrite, toute anomalie concernant la livraison.
-     La vérification des produits est considérée comme effectuée dès lors que le client, ou une personne autorisée par lui, a signé le bon de livraison.
-     Le client devra, le cas échéant, informer le vendeur de ses réserves selon les modalités suivantes :
-     Lundi au vendredi 9H à 17H30
+     En cas de retard de livraison, le vendeur en informera le client, lequel peut dénoncer le contrat et demander à être
+     remboursé dans les 14 jours à compter de cette dénonciation.Le remboursement total du produit et des frais de
+     livraison, ou de réexpédition le cas échéant, est alors effectué. Cette dénonciation du contrat doit être adressée selon
+     les modalités suivantes : Lundi au vendredi 9H à 17H30
+     Toute dénonciation non effectuée dans les règles définies ci-dessus et dans les délais impartis ne pourra être prise
+     en compte et dégagera le vendeur de toute responsabilité vis-à-vis du client.
 
-     Toute réserve non effectuée dans les règles définies ci-dessus et dans les délais impartis ne pourra être prise en compte et dégagera le vendeur de toute responsabilité vis-à-vis du client.
-     A la réception de la réclamation, le vendeur attribuera un numéro d'échange du ou des produit(s) concerné(s) et le communiquera par courrier électronique au client.
+     2. VÉRIFICATION DE LA COMMANDE
+     Si au moment de la livraison, l'emballage d'origine est abîmé, déchiré, ouvert, le client doit alors vérifier l'état
+     des produits. S'ils ont été endommagés,l'acheteur doit impérativement refuser le colis et noter une réserve sur le bon
+     de livraison. Le client doit indiquer sur le bon de livraison, et sous forme manuscrite, toute anomalie concernant la
+     livraison. La vérification des produits est considérée comme effectuée dès lors que le client, ou une personne
+     autorisée par lui,a signé le bon de livraison. Le client devra, le cas échéant, informer le vendeur
+     de ses réserves selon les modalités suivantes : Lundi au vendredi 9H à 17H30
+
+     Toute réserve non effectuée dans les règles définies ci-dessus et dans les délais impartis ne pourra être prise en
+     compte et dégagera le vendeur de toute responsabilité vis-à-vis du client. A la réception de la réclamation, le vendeur
+     attribuera unnuméro d'échange du ou des produit(s) concerné(s) et le communiquera par courrier électronique au
+     client.
+
      3. ERREUR DE LIVRAISON
-     En cas d'erreur de livraison et/ou de non-conformité des produits par rapport aux indications figurant sur le bon de commande, le client formule sa réclamation auprès du vendeur le jour même de la livraison ou au plus tard le premier jour ouvré suivant la livraison.
-     La réclamation pourra être faite selon les modalités suivantes :
-     Lundi au vendredi 9H à 17H30
-     Toute réclamation non effectuée dans les règles définies ci-dessus et dans les délais impartis ne pourra être prise en compte et dégagera le vendeur de toute responsabilité vis-à-vis du client.
+     En cas d'erreur de livraison et/ou de non-conformité des produits par rapport aux indications figurant sur le bon de
+     commande,le client formule sa réclamationnauprès du vendeur le jour même de la livraison ou au plus tard le premier
+     jour ouvré suivant la livraison.La réclamation pourra être faite selon les modalités suivantes :
+     Lundi au vendredi 9H à 17H30.Toute réclamation non effectuée dans les règles définies ci-dessus et dans les délais
+     impartis ne pourra être prise en compte et dégagera le vendeur de toute responsabilité vis-à-vis du client.`
+
+     doc.setFontSize(10);
+     doc.text(textSeven, 20, 20);
+     doc.addPage();
+
+     let textEight:string=`
+
      4. RETOUR DE COMMANDE
      Le produit à échanger ou à rembourser devra être retourné au vendeur dans son ensemble et dans son emballage d'origine, selon les modalités suivantes :
-      ${ans[28]}     Toute réclamation ou retour non effectué dans les règles définies ci-dessus et dans les délais impartis ne pourra être pris en compte et dégagera le vendeur de toute responsabilité vis-à-vis du client.
+      ${ans[28]} Toute réclamation ou retour non effectué dans les règles définies ci-dessus et dans les délais impartis ne pourra être pris en compte et dégagera le vendeur de toute responsabilité vis-à-vis du client.
      Tout produit à échanger ou à rembourser devra être retourné au vendeur dans son ensemble et dans son emballage d'origine. Les frais de retour sont à la charge du   ${ans[29]}.
 
      ARTICLE 9. GARANTIES DES PRODUITS
@@ -362,13 +404,21 @@ ${ans[30]===""?" Il est indiqué au client que le vendeur n'est pas le producteu
 
     1. GARANTIE DE CONFORMITÉ
 
-
     Le client dispose d'un délai de 2 ans à compter de la délivrance du produit pour mettre en oeuvre la garantie légale de conformité.
     A ce titre, il peut choisir entre la réparation ou le remplacement du bien, dans les conditions prévues à l'article L. 211-9 du Code de la consommation.
     Le client n'est pas tenu de rapporter la preuve de l'existence d'un défaut de conformité, dans les 6 mois (24 mois à compter du 18 mars 2016, sauf pour les biens d'occasion) suivant la date de délivrance du produit.
 
     2. GARANTIE DES VICES
     Le client, s'il met en œuvre la garantie des vices prévue aux articles 1641 et suivants du Code civil, pourra choisir entre la résolution de la vente ou une réduction du prix, et ce conformément à l'article 1644 du Code civil.
+   `
+   doc.setFontSize(10);
+   doc.addPage();
+
+
+    doc.text(textEight,20, 20);
+
+    let textNine:string= `
+
 
    ${ans[31]===""?" 3. GARANTIE COMMERCIALELe vendeur offre au client une garantie commerciale couvrant la conformité des produits et assurant en cas de non-conformité le remboursement du prix d'achat,  \n  le remplacement ou la réparation du produit, pendant la durée suivante : 3 mois.  \n Cette garantie ne couvre pas les défauts occasionnés du fait d'une utilisation anormale ou fautive ou résultant d'une cause étrangère aux qualités intrinsèques desproduits. \n Cette garantie n'est pas exclusive de l'application des garanties prévues aux 9.1 et 9.2.":""}
     ARTICLE 10. INDISPONIBILITÉ DES PRODUITS ET REMBOURSEMENT
