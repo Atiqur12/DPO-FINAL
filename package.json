@@ -2,7 +2,6 @@
   "name": "data-protection",
   "version": "1.0.0",
   "scripts": {
-    "heroku-postbuild": "ng build --prod",
     "ng": "ng",
     "start": "ng serve --port 3000",
     "build": "ng build",
@@ -25,7 +24,6 @@
     "rxjs": "~7.5.0",
     "swiper": "^8.2.4",
     "tslib": "^2.3.0",
-    "typescript": "~4.5.2",
     "zone.js": "~0.11.4"
   },
 
