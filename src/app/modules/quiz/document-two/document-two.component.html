@@ -1,8 +1,8 @@
 
 <div class="questions">
-
-
-
+  <h3>Quelle est le nom de votre entreprise ?
+  </h3>
+  <input value="Atiqur" class="form-control">
 
     <h3>Quelle est l'adresse de votre entreprise
     </h3>
@@ -17,6 +17,8 @@
     <h3>Quel est le numéro de téléphone principal de votre entreprise ?
     </h3>
     <input value="Atiqur" class="form-control">
+
+    <!-- 5 -->
 
 
     <h3>Qui est le responsable du traitement de données personnelles dans votre entreprise ? (en général il s'agit du principal gérant de l'entreprise)?
@@ -44,7 +46,7 @@
     <h3>Y a t-il un délégué à la protection de données personnelles ? *Si oui rajouter ce bout de texte?
     </h3>
     <input value="Atiqur" class="form-control">
-
+<!-- 10 -->
 
     <h3>Quel est l'adresse du DPO ?
 
@@ -61,84 +63,213 @@
     <h3>Quel est numéro de téléphone du DPO ?
 
     </h3>
-    <input value="Atiqur" class="form-control">
+    <input value="" class="form-control">
 
 
     <h3>Le DPO fait-il partie d'une organisation extérieure à l'entreprise ? *si oui rajouter ce bout de texte?
     </h3>
-    <input value="Atiqur" class="form-control">
+   <input list="yes/no" class="form-control" />
+    <datalist id="yes/no">
+      <option value="Yes">
+      <option value="No">
+    </datalist>
+
 
 
     <h3>De quelle organisation extérieure dépend le DPO ?
 
     </h3>
-    <input value="Atiqur" class="form-control">
+    <input value="" class="form-control">
+    <!-- 15 -->
 
 
     <h3>Quelle est l'adresse de l'organisme dont dépend le DPO ?
 
     </h3>
-    <input value="Atiqur" class="form-control">
+    <input value="" class="form-control">
 
     <h3>Numéro de téléphone de l'organisme dont dépend le DPO ?
 
     </h3>
-    <input value="Atiqur" class="form-control">
+    <input value="" class="form-control">
 
     <h3>Quelle est la date de création du régistre de traitement de données personnelles ?</h3>
-    <input value="Atiqur" class="form-control">
+    <!--  <input value="Atiqur" class="form-control"> -->
+    <input value="" class="form-control">
+
+
 
     <h3>Quels sont les traitements de données personnelles que vous prévoyez faire dans le cadre de votre activité ?
 
 
     </h3>
-    <input value="Atiqur" class="form-control">
+    <!-- <input value="Atiqur" class="form-control"> -->
+    <input list="answer" class="form-control" />
+    <datalist id="aswer">
+      <option value="ex gestion des clients">
+      <option value="ex gestion des salariés ">
+      <option value="ex gestion des prestataires">
+      <option value=" ex jeux concours">
+    </datalist>
 
     <h3>Pouvez-vous s'il vous plaît nous décrire le traitement 1, notamment la façon dont il va s'effectuer. ?
 
 
     </h3>
-    <input value="Atiqur" class="form-control">
+    <input value="" class="form-control">
+
+    <!-- 20 -->
 
     <h3>Quelle est la date de création du traitement 1 ?
 
 
     </h3>
-    <input value="Atiqur" class="form-control">
+   <input value="" class="form-control">
+    <!-- <input list="yes/no" class="form-control" />
+    <datalist id="yes/no">
+      <option value="Yes">
+      <option value="No">
+    </datalist> -->
 
-    <h3>Quelles sont les données manipulées dans le cadre du traitement 1 ?
 
-    </h3>
-    <input value="Atiqur" class="form-control">
+    <h3>Quelles sont les données manipulées dans le cadre du traitement 1 ?</h3>
+  <!-- <input value="Atiqur" class="form-control"> -->
+  <input list="choose" class="form-control" />
+  <datalist id="choose">
+    <option value="Nom">
+    <option value="Prenom">
+    <option value="addres emails">
+    <option value="adresse">
+    <option value="n° téléphone">
+    <option value="Lieu de naissance">
+    <option value="date de naissance">
+    <option value="age">
+    <option value="salaire/rémunération">
+    <option value="Données RH">
+    <option value=" niveau d’éducation,">
+    <option value="profession">
+    <option value="données">
+    <option value="physiques/Caractéristiques personnelles">
+    <option value="composition familiale">
+    <option value=" activité de loisir/centre d’intérêt">
+    <option value="habitudes de consommation">
+    <option value="informations sur la vie personnelles, données numériques (adresse IP, connexion)">
+    <option value=" données de localisation">
+    <option value=" autre donnée">
+  </datalist>
 
     <h3>De quelles catégories de personnes proviennent ces données perosnnelles ?
     </h3>
-    <input value="Atiqur" class="form-control">
+    <input list="choose2" class="form-control" />
+    <datalist id="choose2">
+      <option value="Utilisateurs">
+      <option value="clients">
+      <option value="prospects">
+      <option value="membres">
+      <option value="élèves/étudiants">
+      <option value="salariés/stagiares">
+      <option value="candidats">
+      <option value="fonctionnaires">
+      <option value="prestataires">
+      <option value="fournisseurs">
+      <option value="patients">
+      <option value="contacts">
+      <option value="autres catégories">
+    </datalist>
+
+
+    <h3>Quelle est la base légale du traitement?
+
+    </h3>
+    <details>
+      <summary>Info</summary>
+      <p> La base légale d’un traitement est ce qui donne le droit à un organisme de traiter des données à caractère personnel.</p>
+    </details>
+    <input list="pro" class="form-control" />
+    <datalist id="pro">
+    <option value="Consentement">
+    <option value=" le contrat">
+    <option value="l'obligation légale">
+    <option value="la sauvegarde des intérêts vitaux">
+    <option value=" l'intérêt public">
+    <option value="I'intérêt légitime">
+    </datalist>
+
 
     <h3>Quelle est la finalité du traitement ?
+
     </h3>
-    <input value="Atiqur" class="form-control">
+    <details>
+      <summary>Info</summary>
+      <p>La finalité du traitement est l’objectif principal de l’utilisation de données personnelles.
+        Les données de doivent pas être traitées ultérieurement de façon incompatible avec cet objectif initial.
+        Si la finalité ne se trouve pas dans la liste, indiquez la dans la rubrique "Autre finalité". </p>
+    </details>
+    <input list="chooseC" class="form-control" />
+    <datalist id="chooseC">
+      <option value="gestion de prestation de service">
+      <option value="gestion de vente">
+      <option value="traitement des commandes">
+      <option value=" gestion d'utilisateurs">
+      <option value="gestion de la relation client">
+      <option value="gestion et administration des membres">
+      <option value="gestion et administration du personnel">
+      <option value="gestion de la paie des salariés">
+      <option value=" gestion des candidatures">
+      <option value="gestion et administration des élèves/étudiants/stagiaires">
+      <option value="gestion des annonces">
+      <option value="enquête de satisfaction">
+      <option value="conformité à une obligation légale">
+      <option value="sécurité des personnes/lieux">
+    </datalist>
 
     <h3>Qui est destinataire de ces données personnelles ?
-
     </h3>
-    <input value="Atiqur" class="form-control">
+
+    <input list="choose" class="form-control" />
+    <datalist id="choose">
+      <option value="Un service intgerne à mon entreprise">
+      <option value=" un sous-traitant">
+        <option value="un destinataire dans un pays hors UE">
+          <option value="un partenaire institutionnel ou commercial">
+    </datalist>
+
 
     <h3>Combien de temps concervez-vous les données personnelles collectées dans le cadre du traitement 1 ?
          N'hésitez pas à détailler données par données si besoin.
     </h3>
     <input value="Atiqur" class="form-control">
+<div>
+    <h3>Quelles mesures de sécurité avez-vous prises concernant le traitement de ces données ?   </h3>
 
-    <h3>Quelles mesures de sécurité avez-vous prises concernant le traitement de ces données ?
-   </h3>
-   <input value="Atiqur" class="form-control">
+      <details>
+      <summary>Info</summary>
+      <p> Si vous avez pris plusieurs ou d'autres mesures de sécurité, vous pouvez les saisir dans «autre mesures de sécurité» </p>
+    </details>
+   <input list="yes" class="form-control" />
+    <datalist id="yes">
+      <option value="Cryptage de données personnelles">
+      <option value="mesures de protection des logiciels">
+      <option value="restriction d'accès">
+      <option value="contrôle d'utilisateurs">
+      <option value="sauvegarde données">
+      <option value="journalisation">
+      <option value=" anonymisation ">
+      <option value="pseudonymisation">
 
+    </datalist>
+
+  </div>
    <h3>Le traitement 1 manipulera t-il des données sensible ?
    </h3>
-   <input value="Atiqur" class="form-control">
+   <details>
+    <summary>Info</summary>
+    <p>Il s'agit de données sur l'origine raciale ou ethnique, les opinions politiques, la religion / la philosophie, l'appartenance à un syndicat, les caractéristiques génétiques, les caractéristiques biométriques, la santé, le comportement sexuel / l'orientation sexuelle / les données criminelles.</p>
+  </details>
 
 
+   <input value="" class="form-control">
 
+   <br>
 
-
-    <button (click)="download()">download</button>
+   <button type="button" class="btn btn-primary" (click)="download()">download</button>

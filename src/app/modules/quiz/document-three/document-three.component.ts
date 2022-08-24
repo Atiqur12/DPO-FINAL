@@ -16,8 +16,6 @@ export class DocumentThreeComponent  {
     const doc = new jsPDF();
     let ans = Array.from(document.querySelectorAll(".questions .form-control")).map((item: any) => item.value)
 
-
-
     let text: string = `
 
 
